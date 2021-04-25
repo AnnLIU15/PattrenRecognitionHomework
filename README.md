@@ -1,2 +1,2 @@
 # PattrenRecognitionHomework
-ģʽʶ��(���İ�)��ҵ
+模式识别第二版作业
