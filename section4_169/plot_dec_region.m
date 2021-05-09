@@ -3,11 +3,8 @@ function  plot_dec_region( net,limits,m,fignum)
 axis([limits(1),limits(2),limits(3),limits(4)])
 [x1,x2] = meshgrid(limits(1):limits(6):limits(2),limits(3):limits(6):limits(4));
 hold on;
-
-x1 = reshape(x1,1,numel(x1));
-x2 = reshape(x2,1,numel(x2));
 % Get the output class assignment from the neural network
-X=[x1;x2];
+X=[reshape(x1,1,numel(x1));reshape(x2,1,numel(x2))];
 output = sim(net,X);
 output = sign(output);
 figure(fignum)
