@@ -1,7 +1,7 @@
-
 !.gitignore
 *.jpg
+*.png
 *.pdf
 *.doc
 *.docx
-/模式识别
+
